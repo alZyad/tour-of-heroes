@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tour-of-heroes';
+  myHeroes = ["Bombasto", "Celeritas", "Magneta", "RubberMan"]
+  heroes = ["Dr. Nice", "Dynama", "Dr IQ", "Aodap"]
 }
