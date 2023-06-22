@@ -4,7 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class HeroService {
-  myHeroes = ['Bombasto', 'Celeritas', 'Magneta', 'RubberMan'];
+  myHeroes = [
+    { name: 'Bombasto', id: 5 },
+    { name: 'Celeritas', id: 6 },
+    { name: 'Magneta', id: 7 },
+    { name: 'RubberMan', id: 8 },
+  ];
   heroes = [
     'Dr. Nice',
     'Dynama',

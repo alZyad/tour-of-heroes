@@ -1,0 +1,19 @@
+<div>
+  <div class="title">
+    <span class="hero-name">{{ heroes[id] }}</span> Details
+  </div>
+  <div>id: {{ id + 1 }}</div>
+  <div class="input-container">
+    <span class="input-label">Hero name:</span>
+    <input type="text" class="input" placeholder="{{ heroes[id] }}" />
+  </div>
+
+  <button
+    class="basic-button"
+    (click)="back()"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    Back
+  </button>
+</div>

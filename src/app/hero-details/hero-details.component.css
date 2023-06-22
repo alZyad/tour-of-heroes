@@ -1,0 +1,24 @@
+.title {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.hero-name {
+  text-transform: uppercase;
+}
+
+.input-label {
+  margin: 0 10px 0 0;
+  font-weight: 600;
+  color: #405061;
+  font-size: 17px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: black;
+}
