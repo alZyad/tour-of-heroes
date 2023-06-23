@@ -16,7 +16,7 @@ export class HeroDetailsComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: HeroService,
+    public heroService: HeroService,
     private location: Location
   ) {}
 

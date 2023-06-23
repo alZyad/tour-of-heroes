@@ -1,6 +1,9 @@
 <h2 class="section-title">My heroes</h2>
 
-<div *ngFor="let hero of heroes; let index = index" class="container">
+<div
+  *ngFor="let hero of heroService.heroes; let index = index"
+  class="container"
+>
   <button class="invisible-button" [routerLink]="['/hero-details', index]">
     <div class="index">{{ index + 1 }}</div>
     <div class="hero-name">

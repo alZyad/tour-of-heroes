@@ -22,4 +22,8 @@ export class HeroService {
     'RubberMan',
     'Mr Hero N°10',
   ];
+
+  updateHeroName = (id: number, event: any) => {
+    this.heroes[id] = event.target.value;
+  };
 }

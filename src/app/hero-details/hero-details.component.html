@@ -5,7 +5,12 @@
   <div>id: {{ id + 1 }}</div>
   <div class="input-container">
     <span class="input-label">Hero name:</span>
-    <input type="text" class="input" placeholder="{{ heroes[id] }}" />
+    <input
+      (input)="heroService.updateHeroName(id, $event)"
+      type="text"
+      class="input"
+      placeholder="{{ heroes[id] }}"
+    />
   </div>
 
   <button

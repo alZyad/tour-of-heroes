@@ -7,8 +7,7 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes-list.component.css'],
 })
 export class HeroesListComponent {
-  [x: string]: any;
-  constructor(private heroService: HeroService) {}
+  constructor() {}
 
-  heroes = this.heroService.heroes;
+  heroes = heroService.heroes;
 }
