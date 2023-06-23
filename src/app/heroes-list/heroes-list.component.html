@@ -1,10 +1,23 @@
-<h2 class="section-title">My heroes</h2>
+<h2 class="section-title">List of heroes</h2>
 
-<div *ngFor="let hero of heroes; let index = index" class="container">
-  <button class="invisible-button" [routerLink]="['/hero-details', index]">
-    <div class="index">{{ index + 1 }}</div>
-    <div class="hero-name">
-      {{ hero }}
-    </div>
-  </button>
+<div class="global-container">
+  <div *ngFor="let hero of heroes" class="container">
+    <button class="invisible-button" [routerLink]="['/hero-details', hero.id]">
+      <div class="index">{{ hero.id + 1 }}</div>
+      <div class="hero-name">
+        {{ hero.name }}
+      </div>
+    </button>
+  </div>
+  <div class="button-container">
+    <button class="basic-button" (click)="heroService.resetHeroes()">
+      Reset
+    </button>
+    <button
+      class="basic-button"
+      [routerLink]="['/hero-details', heroes.length]"
+    >
+      Add
+    </button>
+  </div>
 </div>

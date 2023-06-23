@@ -1,5 +1,9 @@
-.container {
+.global-container {
   margin: 10px;
+}
+
+.container {
+  margin: 10px 0;
 }
 
 .index {

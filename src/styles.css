@@ -27,3 +27,11 @@ h2.section-title {
   align-items: stretch;
   background-color: transparent;
 }
+
+div.button-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 10px 0;
+}

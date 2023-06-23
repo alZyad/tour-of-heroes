@@ -1,19 +1,28 @@
 <div>
   <div class="title">
-    <span class="hero-name">{{ heroes[id] }}</span> Details
+    <span class="hero-name">{{ heroes[id].name }}</span> Details
   </div>
   <div>id: {{ id + 1 }}</div>
   <div class="input-container">
     <span class="input-label">Hero name:</span>
-    <input type="text" class="input" placeholder="{{ heroes[id] }}" />
+    <input [(ngModel)]="newName" type="text" class="input" />
   </div>
 
-  <button
-    class="basic-button"
-    (click)="back()"
-    routerLinkActive="active"
-    ariaCurrentWhenActive="page"
-  >
-    Back
-  </button>
+  <div class="button-container">
+    <button
+      class="basic-button"
+      (click)="back()"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      Back
+    </button>
+
+    <button
+      class="basic-button"
+      (click)="heroService.updateHeroName(id, newName)"
+    >
+      Save
+    </button>
+  </div>
 </div>

@@ -1,9 +1,12 @@
-<h2 class="section-title">Top heroes</h2>
+<h2 class="section-title">My favorite heroes</h2>
 
 <div class="hero-container">
-  <span *ngFor="let hero of myHeroes; let index = index">
-    <button class="invisible-button" [routerLink]="['/hero-details', hero.id]">
-      <div class="hero">{{ hero.name }}</div>
+  <span *ngFor="let myHero of myHeroes">
+    <button
+      class="invisible-button"
+      [routerLink]="['/hero-details', myHero.id]"
+    >
+      <div class="hero">{{ myHero.name }}</div>
     </button>
   </span>
 </div>
